@@ -1,0 +1,104 @@
+.header {
+	overflow: hidden;
+	background-color: #c9acac;
+	padding: 20px 10px;
+	border-radius: 3%;
+	position: sticky;
+}
+
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.header a:hover {
+	background-color: rgb(70, 24, 6);
+	color: rgb(255, 255, 255);
+}
+
+.header a.active {
+	background-color: rgb(70, 24, 6);
+	color: white;
+}
+
+.header-right {
+	float: right;
+}
+
+@media screen and (max-width: 500px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.header-right {
+		float: none;
+	}
+}
+
+body {
+	background: url('siteBackground1.jpg') no-repeat;
+	background-size: cover;
+}
+
+.site-body {
+	position: sticky;
+}
+
+.main-content {
+	font-size: 20px;
+	float: right;
+	margin-right: 10%;
+	margin-top: 10%;
+}
+
+body .main-body {
+	height: fit-content;
+	background-size: cover;
+}
+
+.main-content .btn-donate {
+	margin-top: 3%;
+	background-color: #c9acac;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 4px;
+
+	line-height: 40px;
+	text-decoration: none;
+	margin-left: 120px;
+}
+
+.btn-donate:hover {
+	background-color: rgb(70, 24, 6);
+	color: rgb(255, 255, 255);
+}
+.btn-donate.active {
+	background-color: rgb(70, 24, 6);
+	color: white;
+}
+
+#footer {
+	width: 100%;
+	bottom: 0%;
+	left: 0%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	padding: 1%;
+	background-color: #020202;
+	opacity: 0.7;
+	position: fixed;
+}
